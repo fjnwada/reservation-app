@@ -8,6 +8,8 @@ import { ProductListComponent } from './product/product-list/product-listings.co
 import { ProductDetailComponent } from './product/product-detail/product-detail.component';
 import { ProductComponent } from './product/product.component';
 
+import { HttpClientModule } from '@angular/common/http';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -15,6 +17,7 @@ import { ProductComponent } from './product/product.component';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule
   ],
   providers: [],
