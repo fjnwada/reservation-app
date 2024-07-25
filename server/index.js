@@ -24,3 +24,9 @@ const PORT = process.env.PORT || '3001'
 app.listen(PORT, function(){
     console.log('I am runnning')
 })
+
+const v8 = require('v8');
+
+const maxHeapSize = 256; // MB単位で指定
+v8.setFlagsFromString(`--max-old-space-size=${maxHeapSize}`);
+
