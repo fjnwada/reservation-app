@@ -5,11 +5,10 @@ import { filter } from 'rxjs/operators'
 import { LocationStrategy, PlatformLocation, Location, DOCUMENT } from '@angular/common';
 import { NavbarComponent } from './common/navbar/navbar.component';
  
- 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  templateUrl: 'app.component.html',
+  styleUrls: ['app.component.scss']
 })
 export class AppComponent implements OnInit {
   private _router!: Subscription;
