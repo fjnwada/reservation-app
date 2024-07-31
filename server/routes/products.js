@@ -19,8 +19,11 @@ router.get('/:productId', function(req, res){
         res.json(result)
     })
     .catch(err => {
-        res.status(422).send({errors:  [{title: 'Product error',detail: 'Product not found!'}]})
+        // if(!res.headersSent){
+            res.status(422).send({errors:  [{title: 'Product error',detail: 'Product not found!'}]})
+        // }
     })
+    
 })
 
 module.exports = router
