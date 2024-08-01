@@ -1,10 +1,14 @@
 {
   "name": "reservation-app",
   "version": "0.0.0",
+  "engines": {
+    "node": "v16.19.1",
+    "npm": "8.19.3"
+  },
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
+    "start": "npm run start --prefix server",
+    "build": "ng build --configuration production",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
@@ -18,16 +22,19 @@
     "@angular/platform-browser": "^14.2.0",
     "@angular/platform-browser-dynamic": "^14.2.0",
     "@angular/router": "^14.2.0",
+    "bcrypt": "^5.1.1",
+    "body-parser": "^1.20.2",
     "bootstrap": "^4.6.2",
     "express": "^4.19.2",
-    "module": "^1.2.5",
+    "jsonwebtoken": "^9.0.2",
+    "module": "^0.0.1",
     "mongoose": "^8.5.1",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "^14.2.12",
+    "@angular-devkit/build-angular": "^18.1.2",
     "@angular/cli": "~14.2.12",
     "@angular/compiler-cli": "^14.2.0",
     "@types/jasmine": "~4.0.0",
