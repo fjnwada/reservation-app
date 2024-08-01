@@ -12,9 +12,9 @@ export class LoginComponent implements OnInit {
 
     errors:any = []
 
-    test : Date = new Date();
-    focus: any;
-    focus1: any;
+    // test : Date = new Date();
+    // focus: any;
+    // focus1: any;
     constructor(
         private authService: AuthService,
         private router: Router
